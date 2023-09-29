@@ -1,8 +1,7 @@
 #!/bin/expect
-
+sudo pmset repeat wakeorpoweron MTWRF 07:00:00
 sudo nvram AutoBoot=%03
-
 spawn sudo nvram AutoBoot=%03
 expect "Password:"
-send "nan2023" #remplace linux123 par le mot de passe de ton mac
+send "nan2023" 
 expect eof

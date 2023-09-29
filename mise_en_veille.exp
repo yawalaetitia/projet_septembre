@@ -3,7 +3,7 @@
 
 spawn sudo pmset sleepnow
 expect "Password:"
-send "linux123\n"  
+send "nan2023"  
 expect eof
 
-#remplacer linux123 par vos mot de passe !
+
