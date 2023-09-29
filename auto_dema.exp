@@ -1,0 +1,8 @@
+#!/bin/expect
+
+sudo nvram AutoBoot=%03
+
+spawn sudo nvram AutoBoot=%03
+expect "Password:"
+send "nan2023" #remplace linux123 par le mot de passe de ton mac
+expect eof

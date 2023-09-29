@@ -1,0 +1,9 @@
+#!/bin/expect
+
+
+spawn sudo pmset sleepnow
+expect "Password:"
+send "linux123\n"  
+expect eof
+
+#remplacer linux123 par vos mot de passe !
